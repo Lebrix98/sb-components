@@ -21,6 +21,10 @@ export interface LabelProps {
    * Selected Color
    */
   fontColor?: string;
+    /**
+   * Selected backgroundColor
+   */
+    backgroundColor?: string;
 }
 
 /**
@@ -32,11 +36,12 @@ const MyLabel = ({
   allCaps = false,
   color = "primary",
   fontColor,
+  backgroundColor = 'transparent'
 }: LabelProps) => {
   return (
     <label
       className={`label ${size} ${!!allCaps && "upperText"} text-${color}`}
-      style={{ color: fontColor }}
+      style={{ color: fontColor, backgroundColor}}
     >
       {label}
     </label>

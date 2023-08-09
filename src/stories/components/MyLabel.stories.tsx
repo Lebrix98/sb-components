@@ -8,7 +8,8 @@ export default {
     argTypes: {
         size: { control: 'select' },
         color: { control: 'select' },
-        fontColor: { control: {type: 'color'} }
+        fontColor: { control: {type: 'color'} },
+        backgroundColor: { control: { type: 'color' } }
     },
     tags: ['autodocs'],
 } as ComponentMeta<typeof MyLabel>
@@ -51,6 +52,15 @@ Tertiary.args = {
 export const CustomFontColor = Template.bind({});
 
 CustomFontColor.args = {
+    label: 'Custom Font Color',
     size: 'h1',
     fontColor: '#d7d7d7'
+}
+
+export const BackGroundColor = Template.bind({});
+
+BackGroundColor.args = {
+    label: 'Background Color',
+    size: 'h1',
+    backgroundColor: '#d7d7d7'
 }
