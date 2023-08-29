@@ -9,6 +9,7 @@
 /coverage
 
 # production
+/dist
 /build
 /storybook-static
 
@@ -25,3 +26,5 @@ yarn-error.log*
 
 
 *.log
+
+token.md
