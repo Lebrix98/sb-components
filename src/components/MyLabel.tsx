@@ -30,7 +30,7 @@ export interface LabelProps {
 /**
  * Primary UI component for user interaction
  */
-const MyLabel = ({
+export const MyLabel = ({
   label = "No Label",
   size = "normal",
   allCaps = false,
