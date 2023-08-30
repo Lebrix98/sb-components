@@ -2,9 +2,9 @@ name: Semantic Release
 
 on:
   push:
-    branch: [main]
+    branches: [main]
   pull_request:
-    branch: [main]
+    branches: [main]
 
 jobs:
   build:
@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with: 
-          node-version: 18.13.0
+          node-version: 18.15.0
 
       - name: Install Dependencies
         run: npm install
