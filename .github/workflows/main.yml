@@ -2,9 +2,9 @@ name: Semantic Release
 
 on:
   push:
-    branches: [main]
+    branch: [main]
   pull_request:
-    branches: [main]
+    branch: [main]
 
 jobs:
   build:
