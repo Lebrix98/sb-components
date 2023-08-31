@@ -1,0 +1,98 @@
+.cardContainer {
+  width: 100%;
+  border: 1px solid #e7e7e7;
+  box-shadow: 2px 2px 5px #e7e7e7;
+  border-radius: 25px;
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.cardText > h1 {
+  font-size: 32px;
+  margin: 0px;
+  padding: 20px 30px 5px 30px;
+  color: black;
+
+  @media screen and (max-width: 500px) {
+    padding: 10px 15px 5px 15px;
+  }
+}
+
+.cardText > h3 {
+  margin: 0px;
+  padding: 5px 30px;
+  color: #d7d7d7;
+
+  @media screen and (max-width: 500px) {
+    padding: 5px 15px;
+  }
+}
+
+.cardImage {
+  width: 20%;
+  text-align: center;
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+}
+
+.cardImage > img {
+  width: 100%;
+  max-width: 60px;
+  height: 60px;
+}
+
+.cardBody {
+  width: 100%;
+  padding: 30px;
+
+  @media screen and (max-width: 500px) {
+    width: auto;
+    padding: 15px;
+  }
+}
+
+/* Validaciones */
+
+.body {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.inbody {
+  border-bottom: none;
+}
+
+.complete {
+  width: 100%;
+}
+
+.incomplete {
+  width: 80%;
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
+}
+
+.disabled {
+  display: none;
+}
+
+.Arial {
+  font-family: Arial;
+}
+
+.Helvetica {
+  font-family: Helvetica;
+}
+
+.sans-serif {
+  font-family: sans-serif;
+}
